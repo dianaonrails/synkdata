@@ -15,7 +15,7 @@
 
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:100,200,300,300i,400,500,600,700|Roboto:300,300i,400,400i,500,500i,700,900|Titillium+Web:200,200i,300,300i,400,400i,600,600i,700,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:100,200,300,300i,400,500,600,700|Roboto:100,200,300,300i,400,400i,500,500i,700,900" rel="stylesheet">
 
 
   <!-- CSS
@@ -39,29 +39,32 @@
       <a class="top-menu__link" href="#what">What we do</a>
       <a class="top-menu__link" href="#team">Team</a>
       <a class="top-menu__link" href="#projects">Projects</a>
-      <a class="top-menu__link btn-blue" href="#contacts">Contacts</a>
+      <a class="top-menu__link btn-blue" href="#contacts">Contact Us</a>
     </nav>
-    <hr class="line">
+    
   </div>
-  <div class="carousel">
-    <div class="image one">
-      <div class="text one">Explore new possibilities.</div>
-    </div>
-    <div class="image two">
-      <div class="text two">For you, we go behond.</div>
-    </div>
-  
+  <div class="landing">
+    <div class="text">Seamless integration</div>
+    <div class="text--small">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
   </div>
   <div id="about">
     <div class="container">
       <div class="row">
-        <div class="eight columns">
-          <div class="title">About</div>
-          <p class="block-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod massa lacus, sed ultricies lacus dictum in. Ut tincidunt lacus nec dui auctor aliquet. Proin at turpis sed lorem venenatis venenatis aliquam in risus. Etiam justo ex, bibendum in venenatis non, fringilla nec mi. Morbi vel ex facilisis, hendrerit neque eget, facilisis dolor. Integer convallis velit a velit aliquam viverra. </p>
+        <div class="title">About Us</div>
+        <div class="line--small"></div>
+        <br><br>
+      </div>
+      <div class="row">  
+        <div class="one columns">
+
+          <div class="side">S</div>
         </div>
-        <div class="four columns">
+        <div class="eleven columns">
           
+          <p class="block-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod massa lacus, sed ultricies lacus dictum in. Ut tincidunt lacus nec dui auctor aliquet. Proin at turpis sed lorem venenatis venenatis aliquam in risus. Etiam justo ex, bibendum in venenatis non, fringilla nec mi. Morbi vel ex facilisis, hendrerit neque eget, facilisis dolor. Integer convallis velit a velit aliquam viverra. </p>
+           <p class="block-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod massa lacus, sed ultricies lacus dictum in. Ut tincidunt lacus nec dui auctor aliquet. Proin at turpis sed lorem venenatis venenatis aliquam in risus. Etiam justo ex, bibendum in venenatis non, fringilla nec mi. Morbi vel ex facilisis, hendrerit neque eget, facilisis dolor. Integer convallis velit a velit aliquam viverra. </p>
         </div>
+        
       </div>
     </div>  
   </div>
@@ -69,6 +72,7 @@
     <div class="container">
       <div class="row">
         <div class="title center">What We Do</div>
+        <br><br>
       </div>
       <div class="row">
         <div class="four columns">
@@ -91,6 +95,7 @@
     <div class="container">
       <div class="row">
           <div class="title center">Our Team</div>
+          <br><br>
       </div>    
       <div class="row">
           <div class="four columns team-item">
@@ -121,6 +126,7 @@
     <div class="container">
       <div class="row">
         <div class="title center">Latest Projects</div>
+        <br><br>
       </div>    
       <div class="row">
         <div class="four columns projects__item">
@@ -138,11 +144,36 @@
   <div id="contacts">
     <div class="container">
       <div class="row">
-        <div class="title center">Contact us</div>
+        <div class="title center">Drop us a line, we would love to hear from you.</div>
+        <br><br>
       </div> 
       <div class="row">
+        <form class="contact-form" action="mailto:d.r.carvalho89@gmail.com" method="post" enctype="text/plain">
+          <label class="contact-form__label">Name:</label>
+          <input type="text" name="name" class="textinput">
+          <br>
+          <label class="contact-form__label">E-mail:</label>
+          <input type="text" name="mail" class="textinput">
+          <br>
+          <label class="contact-form__label">Comment:</label>
+          <textarea name="comment"></textarea>
+          <br>
+          <input class="btn-secondary" type="submit" value="Send">
+        </form>
       </div>   
     </div>  
   </div>
 </body>
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="four columns footer__contacts">
+        <div class="footer__location">Lisbon</div>
+        <br>
+        <div class="footer__text">Street something</div>
+        <div class="footer__text">+351 923 456 745</div>
+      </div>
+    </div>
+  </div>
+</footer>
 </html>

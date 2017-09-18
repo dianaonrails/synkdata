@@ -1,3 +1,9 @@
+@font-face {
+    font-family: DIN;
+    src: url("../DINAlternate.otf") format("opentype");
+    font-style: normal;
+}
+
 html,body{
 	font-family: 'Roboto', sans-serif;
 	margin: 0;
@@ -5,19 +11,25 @@ html,body{
 }
 
 .header-menu{
-	background-color: rgba(204, 206, 208, 0.4);
+	position: fixed;
+    width: 100%;
+    top: 0;
 }
 
 .no-margin{
 	margin:0;
 }
 
+.btn-primary{
+	background-color: #1B3B66;
+}
+
+
 .logo{
-	color:#1B3B66;
+	color:white;
 	display: inline-block;
-	font-size: 30px;
-	font-family: 'Titillium Web', sans-serif;
-	margin-left: 40px;
+	font-size: 35px;
+	margin-left: 10%;
 	padding-top: 10px;
 	font-weight: 600;
 }
@@ -31,7 +43,8 @@ html,body{
 	float: right;
 	height: 40px;
 	padding-top: 20px;
-	margin-right: 40px;
+	margin-right: 10%;
+
 }
 
 .header-menu .line{
@@ -41,16 +54,23 @@ html,body{
 
 .top-menu__link{
 	text-decoration: none;
-	color:#1B3B66;
+	color:white;
 	padding-right: 10px;
 	padding-left: 10px;
-	font-size: 16px;
+	font-size: 18px;
+	font-family: 'DIN', sans-serif;
+	font-weight: bold;
+}
+
+.top-menu__link:hover{
+	cursor: pointer;
+	color: #1B3B66;
 }
 
 .top-menu__link.btn-blue{
 	color:white;
 	background-color: #1B3B66;
-    padding:5px 10px 5px 10px;
+    padding:8px 20px 8px 20px;
     border-radius: 19px;
 
 
@@ -62,55 +82,48 @@ html,body{
 }
 
 
-.carousel{
+.landing{
 	position: absolute;
     top: 0;
     z-index: -1;
     width: 100%;
     padding: 0;
     margin: 0;
-   
-}
-
-.carousel .image{
-	background-size: cover;
+    background-image:  url("../images/homepage-img.jpg");
+    background-size: cover;
 	background-position: 100%;
 	width: 100%;
 	height: 600px;
-
+   
 }
 
-.carousel .image.one{
-	background-image: url("../images/image1.jpg");
-}
 
-.carousel .image.two{
-	background-image: url("../images/image3.jpeg");
-}
-
-.carousel .text{
+.landing .text{
 	position: absolute;
 	z-index: 99999;
-	top:200px;
-	font-size: 40px;
-	font-family: 'Titillium Web', sans-serif;
-}
-
-.carousel .text.one{
+	top:340px;
+	font-size: 48px;
+	font-family: 'DIN', sans-serif;
 	margin-left: 10%;
-	color:#034c7a;
-
+	color:white;
 }
 
-.carousel .text.two{
-	margin-left: 3%;
-	color:#4e5255;
+.landing .text--small{
+	position: absolute;
+	z-index: 99999;
+	top:420px;
+	font-size: 25px;
+	font-family: 'Roboto', sans-serif;
+	margin-left: 10%;
+	color:white;
+	font-weight: 100;
 }
 
 
 #about{
 	position: relative;
 	top:600px;
+	height: 400px;
 }
 
 
@@ -118,26 +131,44 @@ html,body{
 	width:100%;
 }
 
+#about .side{
+	
+    font-size: 200px;
+    font-family: 'DIN',sans-serif;
+        top: 21px;
+    position: absolute;
+    color: #f2f2f2;
+    z-index: -1;
+}
+
+.line--small{
+	width: 40px;
+	height: 3px;
+	background-color:#1B3B66;
+	display: block;
+}
+
 /************* TEXT STYLES *****************/
 
 .title{
-	font-size: 30px;
+	font-size: 35px;
 	color:#1B3B66;
 	margin-top: 40px;
-	margin-bottom: 40px;
-	font-family: 'Titillium Web',sans-serif;
+	
+	font-family: 'DIN', sans-serif;
 }
 
 .block-text{
-	padding-top:10px;
-	padding-bottom: 20px;
-
+	font-size: 16px;
+	font-weight: 200;
+	color:#313234;
 }
 
 .title.center{
 	text-align: center;
 }
 
+/**************************************/
 #what{
 	position: relative;
 	background-color: #FAFAFA;
@@ -236,9 +267,71 @@ html,body{
 	position: relative;
 	top:600px;
 	padding-top: 20px;
+	padding-bottom: 50px;
 	background-color: #1B3B66;
 }
 
 #contacts .title{
 	color:white;
+}
+
+#contacts .contact-form{
+	width: 50%;
+  	margin: 0 auto;
+}
+
+#contacts .contact-form .textinput{
+	width: 100%;
+	font-size: 14px;
+	border-radius: 2px;
+}
+
+#contacts .contact-form textarea{
+	width: 100%;
+	height: 100px;
+	border-radius: 2px;
+}
+
+
+#contacts .contact-form .contact-form__label{
+	color:white;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+#contacts .contact-form .btn-secondary{
+	background-color: #cacaca;
+	width: 100%;
+	border-radius: 20px;
+	text-align: center;
+}
+
+#contacts .contact-form .btn-secondary:hover{
+	background-color: white;
+}
+
+
+.footer{
+	position: relative;
+	top:600px;
+	width: 100%;
+	height: 180px;
+	background-color: #2d3035;
+
+}
+
+.footer .footer__contacts{
+	margin-top: 40px;
+}
+
+.footer__location{
+	color:#dadada;
+	font-weight: 500;
+	font-size: 16px;
+}
+
+.footer__text{
+	color:#dadada;
+	font-size: 14px;
+	font-weight: 300;
 }
