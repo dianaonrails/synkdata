@@ -341,3 +341,15 @@ html,body{
 	font-size: 14px;
 	font-weight: 300;
 }
+
+.footer .social{
+	float: right;
+	display: inline-block;
+	width: 10%;
+	margin-top: 100px;
+	margin-right: 10px;
+}
+
+.footer .social img{
+	width: 100%;
+}
