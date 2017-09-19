@@ -353,3 +353,53 @@ html,body{
 .footer .social img{
 	width: 100%;
 }
+
+
+.circle{
+	width: 35%;
+	height: 100px;
+	border:2px solid #2B7CDB;
+	border-radius: 100px;
+}
+
+.circle-icon{
+	font-size:50px;
+	text-align: center;
+	width:100%;
+	margin-top: 50%;
+	transform: translateY(-50%);
+	font-weight: bold;
+}
+
+.item-title{
+	margin-top: 20px;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.description{
+	margin-top: 10px;
+	font-size: 14px;
+	font-weight: 200px;
+}
+
+.project{
+	width: 49%;
+	display: inline-block;
+}
+
+.project--right{
+	float: right;
+}
+
+.project img{
+	width: 100%;
+	display: inline-block;
+
+}
+
+.project .project-img1{
+	background-image: url("../images/projects-image2.jpg");
+	background-position: 100%;
+	background-size: cover;
+}
