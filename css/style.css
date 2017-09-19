@@ -386,6 +386,7 @@ html,body{
 .project{
 	width: 49%;
 	display: inline-block;
+	position: relative;
 }
 
 .project--right{
@@ -396,6 +397,29 @@ html,body{
 	width: 100%;
 	display: inline-block;
 
+}
+
+.project-hover{
+	background-color: rgba(152, 150, 150, 0.62);
+	text-align: center;
+	display: none;
+	position: absolute;
+	top:0;
+	left:0;
+	right: 0;
+	bottom:7px;
+}
+
+.project-title{
+	margin-top: 35%;
+	color:white;
+	font-size: 20px;
+
+}
+
+.project:hover .project-hover{
+	display: block;
+	
 }
 
 .project .project-img1{
