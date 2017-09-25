@@ -170,8 +170,7 @@ html,body{
 .top-menu{
 	display: inline-block;
 	float: right;
-	height: 40px;
-	padding-top: 20px;
+	height: 46px;
 	margin-right: 10%;
 
 }
@@ -192,9 +191,29 @@ html,body{
 	text-transform: uppercase;
 }
 
-.top-menu__link:hover{
+.top-menu__item{
+	display: inline-block;
+	height: 100%;
+	padding-top: 20px;
+}
+
+.top-menu__item:hover{
 	cursor: pointer;
-	color: #1B3B66;
+	background-color: #1B3B66;
+	color:white;
+}
+
+.top-menu__item:last-child{
+	padding-left: 20px;
+}
+
+
+.top-menu__item:last-child:hover{
+	background-color: transparent;
+}
+
+.top-menu__link:hover{
+	color:white;
 }
 
 .top-menu__link.btn-blue{
