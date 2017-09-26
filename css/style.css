@@ -528,7 +528,7 @@ html,body{
 	width: 35%;
 	height: 100px;
 	border:2px solid #2B7CDB;
-	border-radius: 100px;
+	border-radius: 100%;
 }
 
 .circle-icon{
@@ -621,5 +621,43 @@ html,body{
 
 	.news-block__title{
 		width: 100%;
+	}
+
+	.circle{
+		height: 118px;
+	}
+
+	.item{
+		margin-bottom: 45px;
+	}
+
+	.team-item{
+		margin-bottom: 45px;
+	}
+
+	.project{
+		width: 100%;
+		margin-bottom: 40px;
+	}
+
+	#contacts .contact-form{
+		width: 95%;
+	}
+
+	.footer{
+		height: 100%;
+		padding: 20px 0px;
+	}
+
+	.footer .social{
+		float: left;
+	}
+
+	.footer__text{
+		font-size: 18px;
+	}
+
+	.landing .text{
+		top:220px;
 	}
 }
