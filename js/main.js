@@ -27,5 +27,5 @@ $(document).ready(function () {
   sr.reveal('.team-item', { duration: 2000 }, 100);
   sr.reveal('#work');
   sr.reveal('.project', { duration: 2000 }, 100);
-  sr.reveal('#contacts');
+  sr.reveal('#contacts .container');
 });
